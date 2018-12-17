@@ -16,13 +16,21 @@
     <tr>
         <th>Name</th>
         <th>Description</th>
-        <th>Type</th>
+        <!-- added: -->
+        <th>Category</th>
+
+        <!-- old: -->
+        <!-- <th>Type</th> -->
     </tr>
 
     <tr th:each="cheese : ${cheeses}">
         <td th:text="${cheese.name}"></td>
         <td th:text="${cheese.description}"></td>
-        <td th:text="${cheese.type.name}"></td>
+        <!-- added: -->
+        <td th:text="${cheese.category.name}"></td>
+
+        <!-- old: -->
+        <!-- <td th:text="${cheese.type.name}"></td> -->
     </tr>
 
 </table>
